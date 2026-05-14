@@ -8,11 +8,9 @@ sudo pacman -Syy --noconfirm archlinux-keyring
 #Build
 sudo pacman -S --noconfirm --needed git base-devel meson blueprint-compiler
 #Needed
-sudo pacman -S --noconfirm --needed libadwaita python-gobject libpwquality sqlcipher tcl python-pip
+sudo pacman -S --noconfirm --needed libadwaita python-gobject libpwquality sqlcipher tcl python-pycryptodome python-zxcvbn
 #Check
 sudo pacman -S --noconfirm --needed appstream-glib desktop-file-utils 
-#Python Installs
-pip install --break-system-packages pycryptodome zxcvbn
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
